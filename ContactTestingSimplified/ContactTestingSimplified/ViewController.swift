@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     let inMemoryContacts = ContactListParser.shared.inMemoryContacts
 
     let start = Date()
-    print("Start \(start)")
+    print("Start \(start), adding \(inMemoryContacts) contacts")
     let addResult = ContactStoreManager.shared.addContactsToDevice(inMemoryContacts)
     let end = Date()
     print("End \(end) \(addResult) Time: \(end.timeIntervalSince(start)) seconds")
